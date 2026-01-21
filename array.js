@@ -49,6 +49,29 @@ console.log(arr3.includes("JS")); // true
 console.log(arr3.indexOf("CSS")); // 1
 console.log(arr3.lastIndexOf("JS"));
 
+/************************
+  9. Looping
+************************/
+arr3.forEach(item => console.log(item));
+
+for (let i of arr3) {
+  console.log(i);
+}
+
+/************************
+ 10. Transform (IMPORTANT)
+************************/
+let nums = [1, 2, 3, 4];
+
+let mapArr = nums.map(n => n * 2);
+let filterArr = nums.filter(n => n % 2 === 0);
+let sum = nums.reduce((a, b) => a + b, 0);
+
+/************************
+ 11. Check Condition
+************************/
+console.log(nums.some(n => n > 3)); // true
+console.log(nums.every(n => n > 0)); // true
 
 /************************
  12. Sort & Reverse
@@ -56,6 +79,9 @@ console.log(arr3.lastIndexOf("JS"));
 let letters = ["b", "a", "c"];
 letters.sort();
 letters.reverse();
+
+let numbers = [10, 5, 20];
+numbers.sort((a, b) => a - b); // ascending
 
 /************************
  13. Convert to String
@@ -68,6 +94,11 @@ console.log(arr3.toString());
 let flatArr = [1, [2, [3, 4]]];
 console.log(flatArr.flat(2));
 
+/************************
+ 15. Find Methods
+************************/
+console.log(nums.find(n => n > 2));
+console.log(nums.findIndex(n => n > 2));
 
 /************************
  16. Fill & Copy
@@ -82,3 +113,8 @@ b.copyWithin(2, 0);
  17. Check Array
 ************************/
 console.log(Array.isArray(arr1));
+
+/************************
+ 18. Spread Operator
+************************/
+let copy = [...arr1];
