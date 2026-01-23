@@ -3,7 +3,14 @@
 //     console.log(arr[i]);   
 // }
 
-let arr = [2,4,3,5,1]
-for(let i = arr.length-1 ; i>=0 ; i--){
-    console.log(arr[i]);
-}
+// let arr = [2,4,3,5,1]
+// for(let i = arr.length-1 ; i>=0 ; i--){
+//     console.log(arr[i]);
+// }
+
+
+
+let str = "Hello World"
+console.log(str.split('').reverse().join(''));
+
+
