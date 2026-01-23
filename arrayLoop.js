@@ -14,7 +14,7 @@ let str = "Hello World"
 console.log(str.split('').reverse().join(''));
 
 
-
+//question 1 how to find them middle ( index ) element of an array
 let arr = [1, 2, 5,3, 4];
 let mid = Math.floor(arr.length / 2);
 
