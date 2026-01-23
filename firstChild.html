@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Table Design</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 40px;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background: #f4f6f8;
+      
+    }
+
+    .table-card {
+      /* max-width: 900px; */
+      width: 100%;
+      margin: auto;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    .table-title {
+      padding: 16px 20px;
+      font-size: 20px;
+      font-weight: 600;
+      background: linear-gradient(135deg, #4f46e5, #6366f1);
+      color: white;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 14px 16px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f1f5f9;
+      font-weight: 600;
+      color: #334155;
+    }
+
+    tbody tr:nth-child(odd) {
+      background-color: #f8fafc;
+    }
+
+    tbody tr:hover {
+      background-color: #e0e7ff;
+      transition: background 0.3s ease;
+    }
+
+    td {
+      color: #475569;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      th, td {
+        padding: 10px;
+        font-size: 13px;
+      }
+
+      .table-title {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="table-card">
+    <div class="table-title">Company Contact List</div>
+
+    <table >
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>Contact</th>
+          <th>Country</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Centro comercial Moctezuma</td>
+          <td>Francisco Chang</td>
+          <td>Mexico</td>
+        </tr>
+        <tr>
+          <td>Island Trading</td>
+          <td>Helen Bennett</td>
+          <td>UK</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
