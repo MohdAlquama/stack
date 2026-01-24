@@ -13,7 +13,7 @@
 
 // Join two strings "Hello" and "JS" without using + inside print (store result using loop).
 
-
+//q
 // Print all elements of array [1, 2, 3, 4, 5] using a loop.
 
 // Find sum of array elements [10, 20, 30, 40] using a loop.
