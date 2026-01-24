@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HealthCare Clinic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #f5f9ff;
+            color: #333;
+        }
+
+        /* HEADER */
+        header {
+            background: #0d6efd;
+            padding: 15px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        nav a {
+            color: #fff;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* HERO */
+        .hero {
+            background: linear-gradient(rgba(13,110,253,0.9), rgba(13,110,253,0.9)),
+                        url("https://images.unsplash.com/photo-1580281657521-6bb5b5f3aefb") center/cover;
+            color: #fff;
+            padding: 100px 60px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .hero button {
+            padding: 12px 30px;
+            background: #fff;
+            color: #0d6efd;
+            border: none;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 70px 60px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 32px;
+            color: #0d6efd;
+        }
+
+        /* SERVICES */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .service-box {
+            background: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        .service-box h3 {
+            margin-bottom: 10px;
+            color: #0d6efd;
+        }
+
+        /* ABOUT */
+        .about {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            align-items: center;
+        }
+
+        .about img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* APPOINTMENT */
+        .appointment {
+            background: #0d6efd;
+            color: #fff;
+            border-radius: 10px;
+        }
+
+        .appointment form {
+            max-width: 600px;
+            margin: auto;
+            display: grid;
+            gap: 15px;
+        }
+
+        .appointment input,
+        .appointment textarea {
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        .appointment button {
+            padding: 12px;
+            border: none;
+            background: #fff;
+            color: #0d6efd;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #021a3a;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .hero h2 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>HealthCare Clinic</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#appointment">Appointment</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <h2>Your Health, Our Priority</h2>
+    <p>Professional medical care you can trust</p>
+    <button>Book Appointment</button>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+    <div class="section-title">
+        <h2>Our Services</h2>
+    </div>
+
+    <div class="services">
+        <div class="service-box">
+            <h3>General Checkup</h3>
+            <p>Regular health checkups for all age groups.</p>
+        </div>
+        <div class="service-box">
+            <h3>Cardiology</h3>
+            <p>Advanced heart care and diagnostics.</p>
+        </div>
+        <div class="service-box">
+            <h3>Laboratory</h3>
+            <p>Accurate and fast medical testing.</p>
+        </div>
+        <div class="service-box">
+            <h3>Emergency Care</h3>
+            <p>24/7 emergency medical services.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="section-title">
+        <h2>About Us</h2>
+    </div>
+
+    <div class="about">
+        <div>
+            <p>
+                HealthCare Clinic provides high-quality medical services with
+                experienced doctors and modern facilities. We focus on patient
+                safety, comfort, and long-term wellness.
+            </p>
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1584515933487-779824d29309" alt="Doctor">
+        </div>
+    </div>
+</section>
+
+<!-- APPOINTMENT -->
+<section id="appointment" class="appointment">
+    <div class="section-title">
+        <h2>Book Appointment</h2>
+    </div>
+
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <textarea rows="4" placeholder="Your Message"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 HealthCare Clinic. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
