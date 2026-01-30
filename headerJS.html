@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/* ===== BODY BASIC RESET ===== */
+document.body.style.margin = "0";
+document.body.style.fontFamily = "Arial, sans-serif";
+
+/* ===== HEADER ===== */
+const header = document.createElement("header");
+header.style.display = "flex";
+header.style.justifyContent = "space-between";
+header.style.alignItems = "center";
+header.style.padding = "15px 40px";
+header.style.backgroundColor = "#0f172a";
+header.style.color = "#fff";
+
+/* ===== LOGO ===== */
+const logo = document.createElement("div");
+logo.innerText = "Setbiz";
+logo.style.fontSize = "22px";
+logo.style.fontWeight = "bold";
+logo.style.cursor = "pointer";
+
+/* ===== MENU ===== */
+const nav = document.createElement("nav");
+nav.style.display = "flex";
+nav.style.gap = "25px";
+
+const menus = ["Home", "Services", "About", "Contact"];
+
+for (let i = 0; i < menus.length; i++) {
+  const link = document.createElement("a");
+  link.innerText = menus[i];
+  link.href = "#";
+  link.style.color = "#cbd5f5";
+  link.style.textDecoration = "none";
+  link.style.fontSize = "16px";
+
+  link.onmouseenter = () => link.style.color = "#38bdf8";
+  link.onmouseleave = () => link.style.color = "#cbd5f5";
+
+  nav.appendChild(link);
+}
+
+/* ===== BUTTON ===== */
+const button = document.createElement("button");
+button.innerText = "Get Started";
+button.style.padding = "10px 18px";
+button.style.border = "none";
+button.style.borderRadius = "6px";
+button.style.cursor = "pointer";
+button.style.backgroundColor = "#38bdf8";
+button.style.color = "#0f172a";
+button.style.fontWeight = "bold";
+
+button.onmouseenter = () => {
+  button.style.backgroundColor = "#0ea5e9";
+};
+
+button.onmouseleave = () => {
+  button.style.backgroundColor = "#38bdf8";
+};
+
+/* ===== APPEND ===== */
+header.appendChild(logo);
+header.appendChild(nav);
+header.appendChild(button);
+
+document.body.prepend(header);
+</script>
+
+</body>
+</html>
