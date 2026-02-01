@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Web Development",
+    "description": "Modern websites using React & Laravel",
+    "price": "₹15,000"
+  },
+  {
+    "id": 2,
+    "title": "App Development",
+    "description": "Android & iOS applications",
+    "price": "₹25,000"
+  },
+  {
+    "id": 3,
+    "title": "SEO Service",
+    "description": "Rank your website on Google",
+    "price": "₹8,000"
+  }
+]

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div id="cards"></div>
+
+<script>
+fetch("./data.json")
+  .then(res => res.json())
+  .then(data => {
+    const container = document.getElementById("cards");
+
+    data.forEach(item => {
+      const card = document.createElement("div");
+      card.innerHTML = `
+        <h3>${item.title}</h3>
+        <p>${item.description}</p>
+        <b>${item.price}</b>
+      `;
+      container.appendChild(card);
+    });
+  });
+</script>
+</body>
+</html>
