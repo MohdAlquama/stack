@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind Cards</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+
+  <div id="card-container" class="max-w-6xl mx-auto p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+   
+   
+   
+
+
+  </div>
+
+  <script>
+    let cardContainer = document.getElementById('card-container');
+
+    let cards = [
+      {
+        title: 'Card Title 1',
+        description: 'This is a description for card 1. It provides some information about the content of the card.',
+        image: 'https://via.placeholder.com/400x200',
+        link: '#'
+      },
+      {
+        title: 'Card Title 2',
+        description: 'This is a description for card 2. It provides some information about the content of the card.',
+        image: 'https://via.placeholder.com/400x200',
+        link: '#'
+      },
+      {
+        title: 'Card Title 3',
+        description: 'This is a description for card 3. It provides some information about the content of the card.',
+        image: 'https://via.placeholder.com/400x200',
+        link: '#'
+      }
+    ];
+
+    cards.forEach(card => {
+      let cardElement = document.createElement('div');
+      cardElement.className = 'bg-white rounded-lg shadow-md overflow-hidden';
+
+      cardElement.innerHTML = `
+        <div class="p-4">
+          <h2 class="text-xl font-semibold mb-2">${card.title}</h2>
+          <p class="text-gray-600 mb-4">${card.description}</p>
+          <a href="${card.link}" class="text-blue-500 hover:underline">Read More</a>
+        </div>
+      `;
+
+      cardContainer.appendChild(cardElement);
+    });
+  </script>
+</body>
+</html>
