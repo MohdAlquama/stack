@@ -6,7 +6,7 @@
 // });
 // console.log(uniqueArr);
 
-let str = "aaaaaaaaaatttttttttttttttttttttttaaaaaaaaaa";  // h w e r l d
+let str = "hello world";  // h w e r l d
 // In JavaScript,
 // Set is a built-in object that allows you to store a collection of unique values of any type, whether primitive values
 //  or object references
