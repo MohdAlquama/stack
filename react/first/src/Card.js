@@ -1,9 +1,9 @@
-function Card() {
+function Card({name="hello"}) {
   return (
     <div className="max-w-sm mx-auto bg-white shadow-md rounded-lg p-6">
       
       <h2 className="text-xl font-bold mb-2">
-        Card hero my name 
+        {name}
       </h2>
 
       <p className="text-gray-600 mb-4">
