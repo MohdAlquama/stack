@@ -11,8 +11,7 @@ function Home() {
     <div>
     <Header/>
         <Card name='alquama' />
-        <h1>{h}</h1>
-        <button onClick={update} >update</button>
+
     </div>
   )
 }
