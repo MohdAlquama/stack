@@ -7,6 +7,7 @@ import Hero from './implement/Hero';
 import HeroSectionTest from './implement/HeroSectionTest';
 import Home from './Home';
 import ShowData from './implement/ShowData';
+import Optim from './Optim';
 
 
 
@@ -18,6 +19,7 @@ root.render(
       <Route path='/' element={  <Home/> }/>
       <Route path='/xtx' element={  <HeroSectionTest/> }/>
       <Route path='/v/:getMyId' element={<ShowData/>}/>
+      <Route path='/hero' element={<Optim/>}/>
     </Routes>
   </BrowserRouter>
   </React.StrictMode>
